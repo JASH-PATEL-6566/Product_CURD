@@ -1,0 +1,351 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 220, 175);
+    position: relative;
+    font-family: "Open Sans";
+}
+
+.massage-container {
+    top: 1em;
+    padding: 0.2em 1.3em;
+    border-radius: 0.4em;
+    background-color: white;
+    outline: 2px double black;
+    position: absolute;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.success {
+    background-color: rgba(36, 255, 36, 0.26);
+}
+
+.fail {
+    background-color: rgba(255, 0, 0, 0.267);
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 190, 105);
+    border-radius: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.container {
+    /* border: 2px solid black; */
+    height: 99.4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.container nav {
+    position: absolute;
+    top: 0.3em;
+    width: 100%;
+    height: 5%;
+    /* border: 2px solid black; */
+    display: flex;
+}
+
+.container nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container nav ul li {
+    list-style: none;
+    font-size: 1.3em;
+    margin: 0 0.7em;
+    cursor: pointer;
+    color: rgb(99, 57, 3);
+}
+
+.table-container {
+    margin: 0;
+    width: 80%;
+    /* height: fit-content; */
+    height: 70%;
+    overflow: scroll;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+}
+
+.table-container table {
+    width: 100%;
+    border: 2px solid rgb(252, 205, 144);
+}
+
+.sell_table_container table {
+    width: 100%;
+    margin: auto;
+    border: 2px solid rgb(253, 196, 120);
+}
+
+.table-container table tr th,
+.sell_table_container table tr th {
+    background-color: rgb(255, 176, 74);
+    font-size: 1.1em;
+    padding: 0.5em 1.8em;
+    position: sticky;
+    /* position: sticky; */
+    top: 0.1em;
+}
+
+.table-container table tr td,
+.sell_table_container table tr td {
+    background-color: rgb(255, 210, 152);
+    font-size: 1em;
+    padding: 0.4em 1.8em;
+}
+
+.table-container tbody,
+.sell_table_container tbody {
+    font-size: 1.07em;
+}
+
+.th_name {
+    width: 40%;
+    /* text-align: left; */
+}
+.th_name_sell {
+    width: 45%;
+    /* text-align: left; */
+}
+
+.stock {
+    width: 10%;
+}
+
+.price {
+    width: 13%;
+}
+
+.th_stock_sell {
+    width: 20%;
+}
+
+.th_amount_sell {
+    width: 22%;
+}
+
+.th_date {
+    width: 25%;
+}
+
+.container form {
+    margin-bottom: 1.2em;
+}
+
+.container form input,
+.container form button {
+    margin: 0 0.9em;
+    font-size: 1.2em;
+    padding: 0.4em 0.7em;
+    outline: none;
+    border-style: none;
+    border-radius: 0.3em;
+}
+
+.container form button {
+    background-color: rgb(255, 171, 61);
+    border: none;
+}
+
+.update {
+    cursor: pointer;
+    float: left;
+}
+
+.delete {
+    float: right;
+    cursor: pointer;
+}
+
+.update_page {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 111111111;
+}
+
+.update_container {
+    border-radius: 0.7em;
+    border: 1px solid black;
+    width: 40%;
+    height: fit-content;
+    background-color: aliceblue;
+    padding: 1.8em 0.2em;
+    margin-right: 1em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    right: 0.2em;
+    top: 0.3em;
+    border-radius: 50%;
+    /* border: 2px solid black; */
+}
+
+.icon:hover {
+    background-color: rgba(0, 0, 0, 0.301);
+    cursor: pointer;
+}
+
+.update_container div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6em;
+}
+
+.update_container div label {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.update_container div input {
+    margin: 0.3em 0.2em;
+    border: 1px solid black;
+    width: 70%;
+}
+
+.update_container button {
+    /* width: 50%; */
+    cursor: pointer;
+}
+
+.sell-page {
+    position: absolute;
+    height: 100.6vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.61);
+}
+
+.sell-container {
+    /* border: 2px solid black; */
+    height: 80%;
+    width: 80%;
+    background-color: rgb(252, 205, 144);
+    border-radius: 0.7em;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.icon_sell {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    cursor: pointer;
+    height: 1.5em;
+    width: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.icon_sell:hover {
+    background-color: rgb(253, 183, 92);
+}
+
+.form-container-sell {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.form-container-sell input {
+    background-color: rgb(252, 245, 237);
+}
+
+.table_sell {
+    /* border: 2px solid black; */
+    width: 90%;
+    margin: auto;
+    margin-top: 2em;
+    height: 63%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.sell_in_name {
+    position: relative;
+}
+
+.sell_confirm {
+    font-size: 1.3em;
+    padding: 0.3em 1.6em;
+    background-color: rgb(252, 163, 48);
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline: 3em;
+    align-items: center;
+}
+
+.total_amount span {
+    color: rgb(255, 123, 0);
+}
+
+.dropdown {
+    position: absolute;
+    margin-top: 0.5em;
+    width: 29.5%;
+    z-index: 1111;
+    border-radius: 0.5em;
+    background-color: rgb(219, 219, 218);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-row {
+    height: 1.9em;
+    display: flex;
+    align-items: center;
+    width: 94%;
+    /* margin-left: 0.3em; */
+    border-radius: 0.5em;
+    cursor: pointer;
+    padding-left: 1em;
+    margin-block: 0.1em;
+}
+
+.dropdown-row:hover {
+    background-color: rgb(207, 207, 206);
+}
+
+.display_none {
+    display: none;
+}
